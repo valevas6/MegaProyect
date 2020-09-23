@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="scss/main.css">
+    <title>Megatropico</title>
+    <link rel="icon" href="src/img/logo_header.png" type="image/png"/>
+</head>
+<body>
+    <a href="index.html"><img class="logo"  src="src/img/logo.jpeg" alt="Logo Megatropico" /></a>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <p></p>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ">
+            <li class="nav-item nav-item-margin">
+              <a class="nav-link navbar-item text-bold" href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item nav-item-margin">
+              <a class="nav-link navbar-item  linked text-bold" href="about.html">Acerca</a>
+            </li>
+            <li class="nav-item nav-item-margin">
+              <a class="nav-link navbar-item text-bold" href="products.html">Productos</a>
+            </li>
+            <li class="nav-item dropdown nav-item-margin">
+              <a class="nav-link dropdown-toggle nav-link navbar-item text-bold" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Información Técnica</a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item nav-link navbar-item text-bold" href="control_humedad.html">Control de Humedad</a>
+                <a class="dropdown-item nav-link navbar-item text-bold" href="limpieza_silos.html">Limpieza de Silos</a>
+              </div>
+            </li>
+            <li class="nav-item nav-item-margin">
+              <a class="nav-link navbar-item text-bold" onclick="alertUser()"  href="https://megatropico.triquimas.cr/login?ReturnUrl=%2F">Compras en línea</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link navbar-item text-bold" href="form_contact.html">Contacto</a>
+            </li>
+          </ul>
+        </div>
+    </nav>
+
+    <div>
+        <img class="carousel-img" src="src/img/slide-about-animals.png" alt="Slider de animales">
+    </div>
+
+    <div class="about-history">
+        <h1 class="text-bold margin-bottom text-yellow text-center">Historia</h1>
+        <div class="row">
+            <div class="col-lg-10 col-md-8 col-sm-8">
+                <p class="text-normal justify">Megatrópico es una empresa familiar fundada Palmares de Alajuela en el año 2003, dedicada a la producción de alimentos balanceados. Cuenta con más de 30 años de experiencia en la elaboración de alimentos balanceados para animales, así como en diferentes producciones pecuarias. Ofrecemos a nuestros clientes el mejor alimento para animales al mejor precio. Brindamos también, un servicio de acompañamiento técnico pecuario a aquellos clientes que lo necesiten.</p>
+                <p class="text-normal justify">Estamos comprometidos con la calidad de nuestros alimentos balanceados y a buscar siempre la forma de innovar nuestros productos con el fin de beneficiar a nuestros clientes en su actividad productiva.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="about-mision-vision">
+        <div class="row">
+            <div class="col-6">
+                <h1 class="text-bold margin-bottom text-center">Misión</h1>
+                <p class="text-normal justify">Producimos alimentos balanceados de alta calidad para animales, 
+                    a través de procesos automatizados y estandarizados e innovadores para el bienestar de nuestros colaboradores, clientes, accionistas, proveedores, comunidad y ambiente.</p>
+            </div>
+
+            <div class="col-6">
+                <h1 class="text-bold margin-bottom text-center">Visión</h1>
+                <p class="text-normal justify">Somos una empresa familiar consolidada en el mercado costarricense, con una planta moderna, certificada y automatizada de alimento balanceado para animales.</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="white-background">
+        <h1 class="text-bold margin-bottom text-yellow text-center">Valores</h1>
+        <div class="row margin-bottom">
+            <div class="col-12 col-md-6">
+                <img class="text-center icon-about" src="src/img/icon-inovacion.png" alt="Icono Innovación">
+                <h2 class="value text-bold text-center margin-bottom">Innovación</h3>
+                <p class="text-normal justify margin-bottom">La innovación de nuestros productos y servicios son parte esencial de nuestra filosofía. Estamos convencidos en que a través de la innovación vamos a traer los mayores beneficios a nuestros clientes desde el uso de materias primas nuevas hasta el uso tecnologías en nuestra fábrica y asesorías técnicas. Nuestros clientes además pueden tener plena confianza de que cualquier cambio en nuestros alimentos balanceados, ha sido aprobado por nuestro nutricionista y evaluado en nuestras granjas experimentales.</p>
+            </div>
+            <div class="col-12 col-md-6">
+                <img class="text-center icon-about" src="src/img/icon-calidad.png" alt="Icono Calidad">
+                <h2 class="value text-bold text-center margin-bottom">Calidad</h3>
+                <p class="text-normal justify">En Megatrópico nos aseguramos de que nuestros alimentos balanceados sean de la mejor calidad. Contamos con un Departamento de Control de Calidad que se asegura que todas las materias primas que ingresan a nuestra planta cumplan con todos los estándares de calidad. También se encarga de revisar todos los procesos de producción y de producto terminado, para así asegurar a nuestros clientes la calidad en nuestros alimentos balanceados.</p>
+            </div>
+            <div class="col-12 col-md-6">
+                <img class="text-center icon-about" src="src/img/icon-confianza.png" alt="Icono Confianza">
+                <h2 class="value text-bold text-center margin-bottom">Confianza</h3>
+                <p class="text-normal justify margin-bottom">La confianza de nuestros clientes es esencial para Megatrópico, apuntamos siempre a relaciones comerciales de largo plazo que traiga beneficios a ambas partes.</p>
+            </div>
+            <div class="col-12 col-md-6">
+                <img class="text-center icon-about" src="src/img/icon-compromiso.png" alt="Icono Compromiso">
+                <h2 class="value text-bold text-center margin-bottom">Compromiso</h3>
+                <p class="text-normal justify margin-bottom">Estamos comprometidos con nuestros clientes en dar nuestros mejores productos y nuestro mejor servicio para que su negocio alcance su mayor potencial. </p>
+            </div>
+            <div class="col-12">
+                <img class="text-center icon-gestion" src="src/img/icon-gestion.png" alt="Icono Gestión Integral">
+                <h2 class="value text-bold text-center margin-bottom">Gestión Integral</h3>
+                <p class="text-normal justify">
+                    Megatrópico ve a sus clientes como sus socios en el campo, el éxito en sus producciones lo vemos como un logro común. Por esta razón Megatrópico está comprometido en ayudar a mejorar mediante servicios técnicos los desafíos que puedan ir apareciendo en el camino y recomendar la mejor solución disponible. </p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="row">
+          <div class="col-lg-6 col-md-2 col-sm-12">
+  
+          </div>
+          <div class="col-lg-3 col-md-5 col-sm-12">
+            <p class="text-bold">Lunes a Viernes</p>
+            <p class="text-normal">7:00 a.m - 5:30 p.m</p>
+          </div>
+          <div class="col-lg-3 col-md-5 col-sm-12">
+                <p class="text-bold">Contacto</p>
+                <div class="row">
+                  <div class="col-1">
+                    <span class="fas fa-phone-alt social-icons"></span>
+                  </div>
+                  <div class="col-8">
+                    <p class="text-normal padding-left">(+506) 2200-0505 <br>(+506) 2200-0506</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-1">
+                    <span class="fas fa-envelope social-icons"></span>
+                  </div>
+                  <div class="col-8">
+                    <p class="text-normal padding-left">ventas@megatropico.com</p>
+                  </div>
+                </div>
+          </div>
+        </div>
+      </footer>
+      <script src="js/app.js"></script>
+      <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+  </html>

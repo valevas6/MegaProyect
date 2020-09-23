@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="scss/glider.css">
+    <link rel="stylesheet" href="scss/main.css">
+    <title>Megatropico</title>  	
+    <link rel="icon" href="src/img/logo_header.png" type="image/png"/>
+</head>
+<body>
+  <a href="index.html"><img class="logo"  src="src/img/logo.jpeg" alt="Logo Megatropico" /></a>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <p></p>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav ">
+          <li class="nav-item nav-item-margin">
+            <a class="nav-link navbar-item text-bold linked " href="index.html">Inicio</a>
+          </li>
+          <li class="nav-item nav-item-margin">
+            <a class="nav-link navbar-item text-bold" href="about.html">Acerca</a>
+          </li>
+          <li class="nav-item nav-item-margin">
+            <a class="nav-link navbar-item text-bold" href="products.html">Productos</a>
+          </li>
+          <li class="nav-item dropdown nav-item-margin">
+            <a class="nav-link dropdown-toggle nav-link navbar-item text-bold" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Información Técnica</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item nav-link navbar-item text-bold" href="control_humedad.html">Control de Humedad</a>
+              <a class="dropdown-item nav-link navbar-item text-bold" href="limpieza_silos.html">Limpieza de Silos</a>
+            </div>
+          </li>
+          <li class="nav-item nav-item-margin">
+            <a class="nav-link navbar-item text-bold" onclick="alertUser()" href="https://megatropico.triquimas.cr/login?ReturnUrl=%2F">Compras en línea</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link navbar-item text-bold" href="form_contact.html">Contacto</a>
+          </li>
+        </ul>
+      </div>
+  </nav>
+    
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="carousel-img" src="src/img/slider_toro.png" alt="Segundo slider">
+        </div>
+        <div class="carousel-item">
+          <img class="carousel-img" src="src/img/slider_gallinas_ponedoras.png" alt="Primer slider">
+        </div>
+        <div class="carousel-item">
+          <img class="carousel-img" src="src/img/slider_vaca.png" alt="Tercer slider">
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only text-bold">Anterior</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only text-bold">Siguiente</span>
+      </a>
+    </div>
+
+    <div class="black-background">
+      <p class="margin-bottom text-center text-normal">Megatrópico es una empresa dedicada a la producción y venta de alimentos 
+        balanceados para animales de la más alta calidad.</p>
+        <a class="btn-mega btn-linked" href="about.html">Ver más</a>
+    </div>
+
+    <div class="carrousel margin-carousel">
+      <div class="carousel-container">
+        <button aria-label="Anterior" class="glider-prev">
+          <i class="fas fa-chevron-left"></i>
+        </button>
+
+        <div class="list-carousel margin-bottom-buttons">
+          <div class="carousel-element">
+            <img  class="img-carousel" src="src/img/pollo-c.png" alt="pollos">
+            <h2 class="text-bold text-center margin-bottom">Pollos de Engorde</h2>
+            <a class="btn-linked btn-mega" href="fichas_pollos.html">Ver productos</a>
+          </div>
+          <div class="carousel-element">
+            <img  class="img-carousel" src="src/img/gallina-c.png" alt="gallina">
+            <h2 class="text-bold text-center margin-bottom">Gallinas Ponedoras</h2>
+            <a class="btn-linked btn-mega" href="fichas_ponedoras.html">Ver productos</a>
+          </div>
+          <div class="carousel-element">
+            <img  class="img-carousel" src="src/img/cerdo-c.png" alt="cerdo">
+            <h2 class="text-bold text-center margin-bottom">Cerdos</h2>
+            <a class="btn-linked btn-mega" href="fichas_cerdos.html">Ver productos</a>
+          </div>
+          <div class="carousel-element">
+            <img  class="img-carousel" src="src/img/vaca-c.png" alt="vaca">
+            <h2 class="text-bold text-center margin-bottom">Bovinos</h2>
+            <a class="btn-linked btn-mega" href="fichas_bovinos.html">Ver productos</a>
+          </div>
+          <div class="carousel-element">
+            <img class="img-carousel" src="src/img/caballo-c.png" alt="caballos">
+            <h2 class="text-bold text-center margin-bottom">Caballos</h2>
+            <a class="btn-linked btn-mega" href="fichas_caballos.html">Ver productos</a>
+          </div>
+          <div class="carousel-element">
+            <img class="img-carousel" src="src/img/perro-c.png" alt="perros">
+            <h2 class="text-bold text-center margin-bottom">Perros</h2>
+            <a class="btn-linked btn-mega" href="fichas_perros.html">Ver productos</a>
+          </div>
+          <div class="carousel-element">
+            <img  class="img-carousel" src="src/img/oveja-c.png" alt="ovejas">
+            <h2 class="text-bold text-center margin-bottom">Ovejas</h2>
+            <a class="btn-linked btn-mega" href="fichas_ovejas.html">Ver productos</a>
+          </div>
+          <div class="carousel-element">
+            <img  class="img-carousel" src="src/img/conejo-c.png" alt="conejo">
+            <h2 class="text-bold text-center margin-bottom">Conejos</h2>
+            <a class="btn-linked btn-mega" href="fichas_conejos.html">Ver productos</a>
+          </div>
+        </div>
+
+        <button aria-label="Siguiente" class="glider-next">
+          <i class="fas fa-chevron-right"></i>
+        </button>
+      </div>
+
+      <div role="tablist" class="indicators-carousel"></div>
+    </div>
+
+    <div class="gray_background">
+      <video class="video" controls="controls">
+        <source src="src/video/Comercial_megatropico.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      </div>
+
+    <footer>
+      <div class="row">
+        <div class="col-lg-6 col-md-2 col-sm-12">
+
+        </div>
+        <div class="col-lg-3 col-md-5 col-sm-12">
+          <p class="text-bold">Lunes a Viernes</p>
+          <p class="text-normal">7:00 a.m - 5:30 p.m</p>
+        </div>
+        <div class="col-lg-3 col-md-5 col-sm-12">
+              <p class="text-bold">Contacto</p>
+              <div class="row">
+                <div class="col-1">
+                  <span class="fas fa-phone-alt social-icons"></span>
+                </div>
+                <div class="col-8">
+                  <p class="text-normal padding-left">(+506) 2200-0505 <br>(+506) 2200-0506</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-1">
+                  <span class="fas fa-envelope social-icons"></span>
+                </div>
+                <div class="col-8">
+                  <p class="text-normal padding-left">ventas@megatropico.com</p>
+                </div>
+              </div>
+        </div>
+      </div>
+    </footer>
+    
+
+
+    <script src="js/glider.js"></script>
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+    <script src="js/app.js"></script>
+</html>

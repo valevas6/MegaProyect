@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="scss/main.css">
+    <link rel="icon" href="src/img/logo_header.png" type="image/png"/>
+    <title>Megatropico</title>
+</head>
+<body>
+  <a href="index.html"><img class="logo"  src="src/img/logo.jpeg" alt="Logo Megatropico" /></a>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <p></p>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav ">
+          <li class="nav-item nav-item-margin">
+            <a class="nav-link navbar-item text-bold" href="index.html">Inicio</a>
+          </li>
+          <li class="nav-item nav-item-margin">
+            <a class="nav-link navbar-item text-bold" href="about.html">Acerca</a>
+          </li>
+          <li class="nav-item nav-item-margin">
+            <a class="nav-link navbar-item  linked text-bold" href="products.html">Productos</a>
+          </li>
+          <li class="nav-item dropdown nav-item-margin">
+            <a class="nav-link dropdown-toggle nav-link navbar-item text-bold" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Información Técnica</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item nav-link navbar-item text-bold" href="control_humedad.html">Control de Humedad</a>
+              <a class="dropdown-item nav-link navbar-item text-bold" href="limpieza_silos.html">Limpieza de Silos</a>
+            </div>
+          </li>
+          <li class="nav-item nav-item-margin">
+            <a class="nav-link navbar-item text-bold"  onclick="alertUser()" href="https://megatropico.triquimas.cr/login?ReturnUrl=%2F">Compras en línea</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link navbar-item text-bold" href="form_contact.html">Contacto</a>
+          </li>
+        </ul>
+      </div>
+  </nav>
+
+    <div class="white-background">
+      <h1 class="text-bold margin-titles text-yellow">Perro Cachorro</h1>
+      <p class="text-normal text-justify margin-bottom">Alimento extrusado especialmente balanceado para perros cachorros con actividad física normal.</p>
+      <h2 class="text-bold margin-titles text-yellow">Analísis Garantizado</h2>
+      <p class="text-bold margin-bottom">Peso neto: 5 kg., 10 kg., 12 kg., 24 kg.</p>
+
+      <div class="row">
+        <div class="col-12 col-md-8">
+          <table class="table table-bordered">
+            <tbody>
+              <tr>
+                <td class="text-normal">Humedad</td>
+                <td class="text-normal">Máximo</td>
+                <td class="text-normal">12.00%</td>
+              </tr>
+              <tr>
+                <td class="text-normal">Proteína Cruda</td>
+                <td class="text-normal">Mínimo</td>
+                <td class="text-normal">28.00%</td>
+              </tr>
+              <tr>
+                <td class="text-normal">Extracto Etéreo</td>
+                <td class="text-normal">Mínimo</td>
+                <td class="text-normal">12.00%</td>
+              </tr>
+              <tr>
+                <td class="text-normal">Fibra Cruda</td>
+                <td class="text-normal">Máximo</td>
+                <td class="text-normal">6.00%</td>
+              </tr>
+              <tr>
+                <td class="text-normal">Energía Digestible</td>
+                <td class="text-normal">Mínimo</td>
+                <td class="text-normal">3500.00 Kcal/kg</td>
+              </tr>
+              <tr>
+                <td class="text-normal table">Calcio</td>
+                <td class="text-normal">Mínimo</td>
+                <td class="text-normal">0.90%</td>
+              </tr>
+              <tr>
+                <td class="text-normal">Calcio</td>
+                <td class="text-normal">Máximo</td>
+                <td class="text-normal">1.90%</td>
+              </tr>
+              <tr>
+                <td class="text-normal">Fósforo</td>
+                <td class="text-normal">Mínimo</td>
+                <td class="text-normal">0.60%</td>
+              </tr>
+              <tr>
+                <td class="text-normal">Sal (NaCl)</td>
+                <td class="text-normal">Mínimo</td>
+                <td class="text-normal">0.30%</td>
+              </tr>
+              <tr>
+                <td class="text-normal">Sal (NaCl)</td>
+                <td class="text-normal">Máximo</td>
+                <td class="text-normal">0.50%</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class=" col-12 col-md-4">
+          <img class="animal-ficha" src="src/img/perros-cachorro.png" alt="Perro">
+        </div>
+      </div>
+
+      <h2 class="text-bold margin-top margin-titles margin-titles text-yellow">Ingredientes</h2>
+      <p class="text-normal text-justify">Maíz, Harina de Cerdo y/o Harina de Subproductos de Aves y/o Harina de Carne de Pollo, Subproductos de Trigo, Aceite de Pollo, Semolina y/o Puntilla de Arros, DL Metionina, L Lisina, Cloruro de Sodio, Carbonato de Calcio, Fosfato Dicálcico, Carbonato de Hierro, Sulfato de Cobre, Sulfato de Vitamina A, Colecalciferol (Vit. D3), Acetato de Tocoferol (Vit. E), Tiamina, Riboflavina, Piridoxina, Cianocobalamina, Pantotenato de Calcio, Ácido Fólico, Ácido Nicotínico, Bisulfito Sódico de Menadiona (Vit. K), Cloruro de Colina, Higado Pollo Hidrolizado, Terbutil Hidroquinona (antioxidante), ácido propíonico (Inhibidor de hongos), Extracto de Yucca Schidigera (controlador de olores en las heces), Nucleótidos. </p> 
+      <h2 class="text-bold margin-titles margin-top text-yellow">Indicaciones de Uso</h2>
+      <p class="text-normal text-justify">Alimento completo y cuidadosamente balanceado para perros cachorros. Puede servirse en seco o con aguga.</p>  
+      <h2 class="text-bold margin-titles margin-top text-yellow">Tabla de Consumo Megatropico Cachorros</h2>
+      <table class="table table-bordered">
+        <tbody>
+          <tr>
+            <td colspan="2" class="text-normal text-bold"></td>
+            <td colspan="2" class="text-normal text-bold">Menor 3 meses</td>
+            <td colspan="2" class="text-normal text-bold">3 a 4 meses</td>
+            <td colspan="2" class="text-normal text-bold">5 a 7 meses</td>
+            <td colspan="2" class="text-normal text-bold">8 a 12 meses</td>
+          </tr>
+          <tr>
+            <td class="text-normal text-bold">Peso kg.</td>
+            <td class="text-normal text-bold">Consumo</td>
+            <td class="text-normal text-bold">Min</td>
+            <td class="text-normal text-bold">Max</td>
+            <td class="text-normal text-bold">Min</td>
+            <td class="text-normal text-bold">Max</td>
+            <td class="text-normal text-bold">Min</td>
+            <td class="text-normal text-bold">Max</td>
+            <td class="text-normal text-bold">Min</td>
+            <td class="text-normal text-bold">Max</td>
+          </tr>
+          <tr>
+            <td class="text-normal">1, 5-5, 0</td>
+            <td class="text-normal">Tazas/día</td>
+            <td class="text-normal">1/2</td>
+            <td class="text-normal">3/4</td>
+            <td class="text-normal">1/2</td>
+            <td class="text-normal">1</td>
+            <td class="text-normal">1/2</td>
+            <td class="text-normal">1</td>
+            <td class="text-normal">1/2</td>
+            <td class="text-normal">3/4</td>
+          </tr>
+          <tr>
+            <td class="text-normal">5, 0-10, 0</td>
+            <td class="text-normal">Tazas/día</td>
+            <td class="text-normal">1</td>
+            <td class="text-normal">2</td>
+            <td class="text-normal">1 1/4</td>
+            <td class="text-normal">2</td>
+            <td class="text-normal">1</td>
+            <td class="text-normal">1 1/2</td>
+            <td class="text-normal">1</td>
+            <td class="text-normal">1 1/4</td>
+          </tr>
+          <tr>
+            <td class="text-normal">10, 0-20, 0</td>
+            <td class="text-normal">Tazas/día</td>
+            <td class="text-normal">2</td>
+            <td class="text-normal">3</td>
+            <td class="text-normal">2 1/4</td>
+            <td class="text-normal">3 1/4</td>
+            <td class="text-normal">2</td>
+            <td class="text-normal">2 1/4</td>
+            <td class="text-normal">1 3/4</td>
+            <td class="text-normal">2</td>
+          </tr>
+          <tr>
+            <td class="text-normal">20, 0-35, 0</td>
+            <td class="text-normal">Tazas/día</td>
+            <td class="text-normal"></td>
+            <td class="text-normal"></td>
+            <td class="text-normal">2 1/2</td>
+            <td class="text-normal">4 1/4</td>
+            <td class="text-normal">2 1/2</td>
+            <td class="text-normal">3 1/2</td>
+            <td class="text-normal">2 1/4</td>
+            <td class="text-normal">3 1/4</td>
+          </tr>
+          <tr>
+            <td class="text-normal">35, 0-50, 0</td>
+            <td class="text-normal"> </td>
+            <td class="text-normal"> </td>
+            <td class="text-normal"> </td>
+            <td class="text-normal"> </td>
+            <td class="text-normal"> </td>
+            <td class="text-normal">3 1/2</td>
+            <td class="text-normal">4</td>
+            <td class="text-normal">3</td>
+            <td class="text-normal">4</td>
+          </tr>
+        </tbody>
+      </table>
+      <p class="text-normal text-justify">Una taza equivale a 150 gramos.</p>
+      <p class="text-normal text-justify">Alimento Elaborado mediante el proceso de extrusión que favorece la palatabilidad y la digestión por parte de su mascota.</p>
+      <h2 class="text-bold margin-titles margin-top text-yellow">Precauciones y Advertencias</h2>
+      <p class="text-normal text-justify">Este alimento debe almacenarse en un lugar fresco, seco, libre de contaminantes y en tarimas.</p>
+      <p class="text-normal text-justify">Para un correcto balande de la dieta de sus animales consulte nuestro departamento técnico o con su ingeniero agrónomo zootecnista.</p> 
+    </div>
+
+    <footer>
+        <div class="row">
+          <div class="col-lg-6 col-md-2 col-sm-12">
+  
+          </div>
+          <div class="col-lg-3 col-md-5 col-sm-12">
+            <p class="text-bold">Lunes a Viernes</p>
+            <p class="text-normal">7:00 a.m - 5:30 p.m</p>
+          </div>
+          <div class="col-lg-3 col-md-5 col-sm-12">
+                <p class="text-bold">Contacto</p>
+                <div class="row">
+                  <div class="col-1">
+                    <span class="fas fa-phone-alt social-icons"></span>
+                  </div>
+                  <div class="col-8">
+                    <p class="text-normal padding-left">(+506) 2200-0505 <br>(+506) 2200-0506</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-1">
+                    <span class="fas fa-envelope social-icons"></span>
+                  </div>
+                  <div class="col-8">
+                    <p class="text-normal padding-left">ventas@megatropico.com</p>
+                  </div>
+                </div>
+          </div>
+        </div>
+    </footer>
+    <script src="js/app.js"></script>
+      <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+  </html>

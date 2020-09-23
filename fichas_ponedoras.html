@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="scss/main.css">
+    <link rel="icon" href="src/img/logo_header.png" type="image/png"/>
+    <title>Megatropico</title>
+</head>
+<body>
+  <a href="index.html"><img class="logo"  src="src/img/logo.jpeg" alt="Logo Megatropico" /></a>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <p></p>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav ">
+          <li class="nav-item nav-item-margin">
+            <a class="nav-link navbar-item text-bold" href="index.html">Inicio</a>
+          </li>
+          <li class="nav-item nav-item-margin">
+            <a class="nav-link navbar-item text-bold" href="about.html">Acerca</a>
+          </li>
+          <li class="nav-item nav-item-margin">
+            <a class="nav-link navbar-item  linked text-bold" href="products.html">Productos</a>
+          </li>
+          <li class="nav-item dropdown nav-item-margin">
+            <a class="nav-link dropdown-toggle nav-link navbar-item text-bold" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Información Técnica</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item nav-link navbar-item text-bold" href="control_humedad.html">Control de Humedad</a>
+              <a class="dropdown-item nav-link navbar-item text-bold" href="limpieza_silos.html">Limpieza de Silos</a>
+            </div>
+          </li>
+          <li class="nav-item nav-item-margin">
+            <a class="nav-link navbar-item text-bold"  onclick="alertUser()" href="https://megatropico.triquimas.cr/login?ReturnUrl=%2F">Compras en línea</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link navbar-item text-bold" href="form_contact.html">Contacto</a>
+          </li>
+        </ul>
+      </div>
+  </nav>
+
+    <div class="white-background">
+        <h1 class="text-bold margin-bottom text-center">Gallinas Ponedoras</h1>
+        <div class="row">
+            <div class="col-lg-3 col-6 col-md-4 margin-bottom-buttons">
+                <img class="sacos_size" src="src/img/saco_aves.png" alt="Alimento Ponedoras">
+                <h2 class="text-bold text-center margin-bottom">Preinicio Ponedoras</h3>
+                <a class="btn-linked btn-mega-nutricional" href="ponedoras_pollitas_paletizado.html">Ver tabla nutricional</a>
+              </div>
+            <div class="col-lg-3 col-6 col-md-4 margin-bottom-buttons">
+                <img class="sacos_size" src="src/img/saco_aves.png" alt="Alimento Ponedoras">
+                <h2 class="text-bold text-center margin-bottom">Inicio Ponedoras</h3>
+                <a class="btn-linked btn-mega-nutricional" href="ponedoras_inicio_pollitas.html">Ver tabla nutricional</a>
+              </div>
+            <div class="col-lg-3 col-6 col-md-4 margin-bottom-buttons">
+                <img class="sacos_size" src="src/img/saco_aves.png" alt="Alimento Ponedoras">
+                <h2 class="text-bold text-center margin-bottom">Impulsor Ponedoras</h3>
+                <a class="btn-linked btn-mega-nutricional" href="ponedoras_reproductor_impulsor.html">Ver tabla nutricional</a>
+            </div>
+            <div class="col-lg-3 col-6 col-md-4 margin-bottom-buttons">
+                <img class="sacos_size" src="src/img/saco_aves.png" alt="Alimento Ponedoras">
+                <h2 class="text-bold text-center margin-bottom">Desarrollo Ponedoras</h3>
+                <a class="btn-linked btn-mega-nutricional" href="ponedoras_desarrollo_pollitas.html">Ver tabla nutricional</a>
+            </div>
+            <div class="col-lg-3 col-6 col-md-4 margin-bottom-buttons">
+                <img class="sacos_size" src="src/img/saco_aves.png" alt="Alimento Ponedoras">
+                <h2 class="text-bold text-center margin-bottom">Ponedoras 1</h3>
+                <a class="btn-linked btn-mega-nutricional" href="ponedoras_reproductoras1.html">Ver tabla nutricional</a>
+            </div>
+            <div class="col-lg-3 col-6 col-md-4 margin-bottom-buttons">
+                <img class="sacos_size" src="src/img/saco_aves.png" alt="Alimento Ponedoras">
+                <h2 class="text-bold text-center margin-bottom">Ponedoras 2</h3>
+                <a class="btn-linked btn-mega-nutricional" href="ponedoras_reproductoras2.html">Ver tabla nutricional</a>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="row">
+          <div class="col-lg-6 col-md-2 col-sm-12">
+  
+          </div>
+          <div class="col-lg-3 col-md-5 col-sm-12">
+            <p class="text-bold">Lunes a Viernes</p>
+            <p class="text-normal">7:00 a.m - 5:30 p.m</p>
+          </div>
+          <div class="col-lg-3 col-md-5 col-sm-12">
+                <p class="text-bold">Contacto</p>
+                <div class="row">
+                  <div class="col-1">
+                    <span class="fas fa-phone-alt social-icons"></span>
+                  </div>
+                  <div class="col-8">
+                    <p class="text-normal padding-left">(+506) 2200-0505 <br>(+506) 2200-0506</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-1">
+                    <span class="fas fa-envelope social-icons"></span>
+                  </div>
+                  <div class="col-8">
+                    <p class="text-normal padding-left">ventas@megatropico.com</p>
+                  </div>
+                </div>
+          </div>
+        </div>
+      </footer>
+      <script src="js/app.js"></script>
+      <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+  </html>

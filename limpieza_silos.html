@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="scss/main.css">
+    <title>Megatropico</title>
+    <link rel="icon" href="src/img/logo_header.png" type="image/png"/>
+</head>
+<body>
+    <a href="index.html"><img class="logo"  src="src/img/logo.jpeg" alt="Logo Megatropico" /></a>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <p></p>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ">
+            <li class="nav-item nav-item-margin">
+              <a class="nav-link navbar-item text-bold" href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item nav-item-margin">
+              <a class="nav-link navbar-item text-bold" href="about.html">Acerca</a>
+            </li>
+            <li class="nav-item nav-item-margin">
+              <a class="nav-link navbar-item text-bold" href="products.html">Productos</a>
+            </li>
+            <li class="nav-item dropdown nav-item-margin">
+              <a class="nav-link  linked dropdown-toggle nav-link navbar-item text-bold" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Información Técnica</a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item nav-link navbar-item text-bold" href="control_humedad.html">Control de Humedad</a>
+                <a class="dropdown-item  linked nav-link navbar-item text-bold" href="limpieza_silos.html">Limpieza de Silos</a>
+              </div>
+            </li>
+            <li class="nav-item nav-item-margin">
+              <a class="nav-link navbar-item text-bold" onclick="alertUser()"  href="https://megatropico.triquimas.cr/login?ReturnUrl=%2F">Compras en línea</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link navbar-item text-bold" href="form_contact.html">Contacto</a>
+            </li>
+          </ul>
+        </div>
+    </nav>
+    <div class="margin-background">
+      <h1 class="text-bold margin-bottom text-yellow text-center">Procedimiento de Limpieza para Equipos de Almacenamiento de Alimentos Balanceados para Animales</h1>
+      <p class="text-normal text-justify margin-bottom">Para facilitar información a nuestros clientes, Megatropico pone a su disposición la siguiente guía que sirve como base para realizar limpiezas a los equipos de almacenamiento de productos, con el fin de mejorar la calidad de los productos almacenados.</p>
+    </div>
+      <div class="row">
+        <div class="col-12">
+          <div class="container-steps ">
+            <ul class="progressbar ">
+              <li class="active" id="btn1" onclick="step1()"><p class="text-normal text-bold">Paso 1</p></li>
+              <li class="margin-bottom" id="btn2" onclick="step2()"><p class="text-normal text-bold">Paso 2</p></li>
+              <li class="margin-bottom" id="btn3" onclick="step3()"><p class="text-normal text-bold">Paso 3</p></li>
+              <li class="margin-bottom" id="btn4" onclick="step4()"><p class="text-normal text-bold">Frecuencia</p></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+      <div class="margin-background">
+        <div class="card fadein" id="step1">
+          <h2 class="card-header text-bold">Paso 1:</h2>
+          <div class="card-body">
+            <p class="card-text text-normal justify">Antes de realizar la limpieza es necesario que el trabajador cuente con todo el equipo necesario de seguridad:</p>
+            <div class="space-steps">
+              <p class="card-text text-normal justify">Casco</p>
+              <p class="card-text text-normal justify">Lentes</p>
+              <p class="card-text text-normal justify">Mascarilla</p>
+              <p class="card-text text-normal justify">Arnés y cuerdas de seguridad</p>
+              <p class="card-text text-normal justify">Iluminación</p>
+              <p class="card-text text-normal justify">Escoba con extensión. Para evitar contaminación se recomienda utilizar una escoba nueva y limpia para el aseo del equipo</p>
+              <p class="card-text text-normal justify">En caso de silos, debe realizar la labor acompañado de un asistente por razones de seguridad.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card fadein" id="step2">
+          <h2 class="card-header text-bold">Paso 2:</h2>
+          <div class="card-body">
+            <p class="card-text text-normal justify">Se procede a realizar la limpieza del techo, bajando por las paredes y de ultimo el piso, de lo mas alto hacia lo mas bajo, si el silo o tolva es muy alto se puede realizar la limpieza conforme el producto se va consumiendo, es decir, se van limpiando las paredes conforme va bajando el contenido, de manera que al finalizar el consumo del producto toda la superficie interna quede limpia. Siempre se debe utilizar los equipos de seguridad para alturas y acompañado.</p>
+            <p class="card-text text-normal justify">Al realizar la labor se asegura que no queden residuos de productos adheridos a las paredes, que no existan filtraciones de agua por faltantes de tornillos o remaches, desprendimiento de sellos de silicón o deterioro de estructura y que esté libre de plagas.</p>
+          </div>
+          <img class="card-img-top img-clean" src="src/img/limpieza.jpg" alt="Limpieza">
+        </div>
+
+        <div class="card fadein" id="step3">
+          <h2 class="card-header text-bold">Paso 3:</h2>
+          <div class="card-body">
+            <p class="card-text text-normal justify">Por último, una vez limpio todo el equipo se procede a realizar una fumigación para proteger el producto que se va a almacenar.</p>
+            <p class="card-text text-normal justify">Para la fumigación es recomendable utilizar termo nebulizadora para llegar a todos los lugares en el silo o tolva. También se bomba ya sea manual o de motor, para impregnar piso y paredes y deje secar antes de usar nuevamente.</p>
+          </div>
+        </div>
+
+        <div class="card fadein" id="step4">
+          <h2 class="card-header text-bold">Frecuencia:</h2>
+          <div class="card-body">
+            <p class="card-text text-normal justify">Es recomendable realizar el procedimiento de limpieza cada vez que se ingresa alimento nuevo al equipo de almacenamiento.</p>
+            <p class="card-text text-normal justify">No se recomienda llenar producto nuevo sobre viejo pues la probabilidad de generación de moho es alta, disminuyendo drásticamente la vida útil y calidad nutricional del producto, generando problemas de desarrollo en los animales.</p>
+            <p class="card-text text-normal justify">Si desea más información puede contactar a nuestro centro de servicio o a través de nuestros distribuidores y asesores autorizados.</p>
+          </div>
+        </div>
+
+      
+  </div>
+    
+
+    <footer>
+        <div class="row">
+          <div class="col-lg-6 col-md-2 col-sm-12">
+  
+          </div>
+          <div class="col-lg-3 col-md-5 col-sm-12">
+            <p class="text-bold">Lunes a Viernes</p>
+            <p class="text-normal">7:00 a.m - 5:30 p.m</p>
+          </div>
+          <div class="col-lg-3 col-md-5 col-sm-12">
+                <p class="text-bold">Contacto</p>
+                <div class="row">
+                  <div class="col-1">
+                    <span class="fas fa-phone-alt social-icons"></span>
+                  </div>
+                  <div class="col-8">
+                    <p class="text-normal padding-left">(+506) 2200-0505 <br>(+506) 2200-0506</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-1">
+                    <span class="fas fa-envelope social-icons"></span>
+                  </div>
+                  <div class="col-8">
+                    <p class="text-normal padding-left">ventas@megatropico.com</p>
+                  </div>
+                </div>
+          </div>
+        </div>
+      </footer>
+      <script src="js/app.js"></script>
+      <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+  </html>
